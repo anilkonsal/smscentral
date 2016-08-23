@@ -2,8 +2,8 @@
 This project has been developed using Laravel 5.2 with Controller/Service pattern. for setting up this project. GuzzleHttp Client has been used to sent the post request to the SMS Central send sms API call.
 
 ## Steps to run locally
-1. Clone the code of this Repository, then create a database on your local system.
-2. On the shell, run this command
+1. Clone the code of this Repository.
+2. On the shell, change to the newly created folder and run this command
 
     ```
     composer update
