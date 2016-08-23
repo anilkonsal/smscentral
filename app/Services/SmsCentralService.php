@@ -23,6 +23,18 @@ class SmsCentralService {
             ]
         ])->getBody()->getContents();
 
-        return $data;
+        /*
+        If the response was 0, then its success
+         */
+        if ($data === 0) {
+            $response = 'Message was sent successfullly';
+        } else {
+        /*
+        Else we got an error;
+         */
+            $response = $data;
+        }
+
+        return $response;
     }
 }
