@@ -38,3 +38,10 @@ This project has been developed using Laravel 5.2 with Controller/Service patter
         ]
     ```
 6. Navigate to sms.local in the browser. You will see the basic landing page of project. Click on 'Send SMS' button and wait for the processing done.
+
+
+## General Description
+
+1. The Controller used for sending SMS is SmsController placed in 'app/Http/Controllers/SmsController.php'.
+2. This controller uses a Service named SmsCentralSevice placed in 'app/Services/SmsCentralSevice.php'
+3. I have used the GuzzleHttp Library for making a POST Request to the SMS Central RESTful API.
