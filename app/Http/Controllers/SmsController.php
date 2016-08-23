@@ -17,6 +17,7 @@ class SmsController extends Controller
 
     public function send(SmsCentralService $smsCentralService, Request $request) {
         $response = $smsCentralService->sendSms();
+        
         return view('sms.send', ['response' => $response]);
     }
 }

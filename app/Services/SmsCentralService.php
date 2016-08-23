@@ -8,10 +8,19 @@ use Illuminate\Support\Facades\Config;
 class SmsCentralService {
 
     public function sendSms() {
+        /*
+        Get the configration for smscentral
+         */
         $conf = Config::get('app.smscentral');
 
+        /*
+        Make new Guzzle Client for making request
+         */
         $client = new Client();
 
+        /*
+        Send actual post request with the parameters
+         */
         $data = $client->post($conf['url'],[
             'body'  =>  [
                 'USERNAME'  =>  $conf['username'],
