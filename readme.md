@@ -4,10 +4,12 @@ This project has been developed using Laravel 5.2 with Controller/Service patter
 ## Steps to run locally
 1. Clone the code of this Repository, then create a database on your local system.
 2. On the shell, run this command
+
     ```
     composer update
     ```
 3. Create the virtualhost for apache (say sms.local) to point to /path/to/project/public
+
     ```
     <VirtualHost *:80>
         ServerName sms.local
@@ -22,10 +24,12 @@ This project has been developed using Laravel 5.2 with Controller/Service patter
     </VirtualHost>
     ```
 4. In the local hosts file, point sms.local to 127.0.0.1
+
     ```
     127.0.0.1       sms.local
     ```
 5. Open config/app.php file and put your API Key in 'smscentral' sections
+
     ```
     'smscentral' => [
             'url'   =>  '<put url here>',
