@@ -28,7 +28,7 @@ This project has been developed using Laravel 5.2 with Controller/Service patter
     ```
     127.0.0.1       sms.local
     ```
-5. Open config/app.php file and put your API Key in 'smscentral' sections
+5. Open config/app.php file and put your API details in 'smscentral' sections
 
     ```
     'smscentral' => [
